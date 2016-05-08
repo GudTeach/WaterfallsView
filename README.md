@@ -1,0 +1,4 @@
+# WaterfallsView
+瀑布流原理与实现
+参照与UITableView的接口,定义了WaterfallsView的数据源协议与代理协议.外界实现数据源方法,获取cell时先根据标识从缓存池中
+去取cell,当缓存池中取不到cell时,再新建.这样,当WaterfallsView有几千个cell时,也只用新建几十个就够了.
